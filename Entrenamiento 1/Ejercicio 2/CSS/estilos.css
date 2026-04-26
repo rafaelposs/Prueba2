@@ -1,0 +1,120 @@
+body {
+    width: 80%;
+    margin: auto;
+    border: 0.0625rem solid black;
+}
+
+.receta1, .receta2, .receta3 {
+    border: 0.0625rem solid black;
+    padding: 0.625rem;
+    width: 60%;
+    margin: 1.875rem auto;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.recetario h2 {
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.recetario img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 6.25rem;
+    object-fit: cover;
+}
+
+.recetario h3 {
+    margin-left: 11.25rem;
+    font-size: 1.875rem;
+}
+
+.recetario ol {
+    margin-left: 11.25rem;
+    font-size: 1.25rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 1.25rem;
+    margin: 0;
+    border: 0.0625rem solid black;
+    font-size: 1.25rem;
+}
+
+.menu ul li a {
+    margin: 0 0.625rem;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    background-color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    border: 0.0625rem solid black;
+}
+
+.contacto{
+    background-color: lightgrey;
+    padding: 2rem;
+    border: 0.0625rem solid black;
+    width: 30rem;
+    margin: 2rem auto; 
+}
+
+.form-agrupado {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 1.25rem;
+}
+
+.form-agrupado label {
+    width: 6rem; 
+    margin-right: 1rem;
+    padding-top: 0.2rem;
+}
+
+.form-agrupado input,
+.form-agrupado textarea {
+    width: 18rem;
+    padding: 0.3rem;
+    border: 0.0625rem solid black;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.25rem;
+}
+
+.botones button {
+    padding: 0.5rem 3rem;
+    border: 0.0625rem solid black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8%;
+}
+
+.boton-enviar{
+    background-color: lightblue;
+}
+
+.boton-cancelar {
+    background-color: lightcoral;
+}

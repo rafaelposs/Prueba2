@@ -1,0 +1,47 @@
+body{
+    width: 80%;
+    border: 1px solid black; 
+    margin:auto;
+}
+
+header{
+    position:sticky;
+    z-index: 10000;
+    top: 0;
+}
+nav{
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightgray;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.indice{
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.indice a{
+    color:black;
+    text-decoration: none;
+}
+.grupo-receta{
+    border: 1px solid black;
+    background-color: lightblue;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.grupo-receta p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grupo-receta p a{
+    text-decoration: none;
+    color: black;
+}

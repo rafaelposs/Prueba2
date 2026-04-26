@@ -1,0 +1,35 @@
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    border: black solid 0.1em;
+    padding: 5%;
+    
+}
+
+header {
+    text-align: center;
+}
+
+.imagen {
+    width: 20%;
+    height: 20%;
+    background-color: grey;
+    border-radius: 30%;
+
+}
+
+.Datos-personales {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: spa;
+}
+
+h2 {
+    text-align: start;
+    width: 100%;
+    padding: 0.5%;
+}
