@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "uno dos dos cuatro"
+        "uno tres tres cuatro"
+        "cinco cinco seis seis";
+}
+
+.contenedor div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: Arial, sans-serif;
+    border: 0.2rem solid black;
+}
+
+
+.caja_uno {
+    background: #b7c4b0;
+    grid-area: uno;
+}
+
+.caja_dos {
+    background: #e6d8b5;
+    grid-area: dos;
+}
+
+.caja_tres {
+    background: #e6d8b5;
+    grid-area: tres;
+}
+
+.caja_cuatro {
+    background: #b7c4b0;
+    grid-area: cuatro;
+}
+
+.caja_cinco {
+    background: #d9b3b3;
+    grid-area: cinco;
+}
+
+.caja_seis {
+    background: #9fb6c5;
+    grid-area: seis;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contenedor {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "uno dos"
+            "tres cuatro"
+            "cinco seis";
+    }
+
+    .caja_dos {
+        background-color: #b7c4b0;
+    }
+
+    .caja_cuatro {
+        background-color: #e6d8b5;
+    }
+}
+
+@media (max-width: 767px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis";
+    }
+    
+    .contenedor div {
+            font-size: 3rem;
+            border: 0.1rem solid black;
+        }
+
+    .caja_dos {
+        background-color: #b7c4b0;
+    }
+
+    .caja_cuatro {
+        background-color: #e6d8b5;
+    }
+
+    .caja_cinco {
+        background-color: #9fb6c5;
+    }
+
+    .caja_seis {
+        background-color: #d9b3b3;
+    }
+}
+
+    

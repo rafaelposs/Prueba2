@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "uno dos"
+        "tres cuatro"
+        "cinco seis";
+}
+
+.contenedor div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: Arial, sans-serif;
+    border: 0.2rem solid black;
+}
+
+
+.caja_uno {
+    background: #b7c4b0;
+    grid-area: uno;
+}
+
+.caja_dos {
+    background: #b7c4b0;
+    grid-area: dos;
+}
+
+.caja_tres {
+    background: #e6d8b5;
+    grid-area: tres;
+}
+
+.caja_cuatro {
+    background: #e6d8b5;
+    grid-area: cuatro;
+}
+
+.caja_cinco {
+    background: #d9b3b3;
+    grid-area: cinco;
+}
+
+.caja_seis {
+    background: #9fb6c5;
+    grid-area: seis;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "seis seis"
+            "cinco cinco"
+            "tres cuatro"
+            "dos dos"
+            "uno uno";
+    }
+
+    .contenedor div {
+        font-size: 3rem;
+        border: 0.1rem solid black;
+    }
+
+    .caja_cinco {
+        background-color: #9fb6c5;
+    }
+
+    .caja_seis{
+        background-color: #d9b3b3;
+    }
+    
+    .caja_dos
+}
